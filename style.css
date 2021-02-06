@@ -72,17 +72,63 @@ a:last-child{
     transform: scale(2,2);
 }
 
-.tweet:hover{
-    color:rgb(0, 101, 253);
+.git:hover{
+    color:rgb(0, 0, 0);
     transform: scale(2,2);
 }
 
 .linkedin:hover{
-    color:rgba(25, 0, 253, 0.842);
+    color:rgba(4, 0, 253, 0.842);
     transform: scale(2,2);
 }
 
 .facebook:hover{
     color:rgb(4, 0, 255);
     transform: scale(2,2);
+}
+
+.details{
+    margin-bottom: 1.8em;
+}
+
+.effect {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: rgb(48, 41, 41);
+    text-transform: capitalize;
+    background-image: linear-gradient(60deg,#0083FD,#61A1DD);
+    font-size: 1.2em;
+    padding: 1em 3em;
+    border-radius: 5em;
+    overflow: hidden; 
+}
+  
+.effect.effect-4 {
+transition: all 0.2s linear 0s; 
+}
+.effect.effect-4:before {
+    content: "\f2b6";
+    font-family: FontAwesome;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.8em;
+    transform: scale(0, 1);
+    transition: all 0.2s linear 0s; 
+}
+.effect.effect-4:hover {
+    text-indent: -9999px;
+}
+    
+.effect.effect-4:hover:before {
+transform: scale(1, 1);
+text-indent: 0; 
 }
