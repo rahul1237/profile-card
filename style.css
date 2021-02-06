@@ -1,9 +1,11 @@
+/* restoring the browser effects */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* assigning all the same properties to the body */
 body{
     height: 100vh;
     display: flex;
@@ -91,6 +93,9 @@ a:last-child{
 .details{
     margin-bottom: 1.8em;
 }
+
+
+/* CSS for messagin link */
 
 .effect {
     text-align: center;
